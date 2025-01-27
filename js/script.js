@@ -93,7 +93,7 @@ spanKey.addEventListener('click', () => {
 
 
 function showError(div, elemento, valor) {
-    div.innerHTML = `<img src="./images/icons8-error-48.png" alt="error" width="10%">
+    div.innerHTML = `<img src="./interactive-card/images/icons8-error-48.png" alt="error" width="10%">
         ${valor}`
     elemento.insertAdjacentElement('afterend', div);
 };
