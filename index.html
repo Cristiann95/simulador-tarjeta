@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./interactive-card/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Proyect Card</title>
+</head>
+
+<body>
+  <div class="contains__img">
+    <div class="card__front">
+      <span class="card__logo"><img src="./interactive-card/images/card-logo.svg" alt=""></span>
+      <p class="number_in_card"></p>
+      <p class="name_in_card">Juan Pérez</p>
+      <span class="date_in_card">
+        <p class="month_in_card">00/</p>
+        <p class="year_in_card">00</p>
+      </span>
+    </div>
+    <div class="card__back">
+      <p class="key_in_card">000</p>
+    </div>
+  </div>
+
+  <main>
+    <form>
+      <label for="name">Nombre del titular</label>
+      <input type="text" id="nombre" name="Nombre" placeholder="Ej. Juan Pérez">
+      <label for="number">Número de tarjeta</label>
+      <input type="text" name="number" id="numero" placeholder="Ej. 1234 5678 9123 0000">
+      <label class="label__date" for="date">Vencimiento</label><label class="key" for="key">Clave de seg.</label>
+      <input class="date" type="text" id="month" name="mes" placeholder="MM">
+      <input class="date" type="text" id="year" name="anio" placeholder="AA"> <input type="password" id="key"
+        name="clave" placeholder="Ej. 123">
+      <span class="visibility"></span>
+
+
+      <input class="confirm" type="submit" value="Confirmar">
+    </form>
+
+    <div class="attribution">
+      Coded by <a href="#">Cristian Bengardini</a>.
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
