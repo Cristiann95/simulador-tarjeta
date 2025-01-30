@@ -15,6 +15,12 @@ const cardKey = document.querySelector('.key_in_card');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     validateForm();
+    cardName.textContent = 'Juan Pérez';
+    cardNumber.textContent = numParrafo;
+    monthCard.textContent = '00/';
+    yearCard.textContent = '00';
+    cardKey.textContent = keyData;
+    form.reset();
 });
 
 
@@ -43,7 +49,7 @@ function validateInputName() {
 };
 
 function validateInputNumber() {
-    if (numberInput.value.length < 19) {
+    if (numberInput.value.length < 16) {
         numberInput.style.border = 'solid 1.5px red';
         showError(divErrorNumber, numberInput, 'Debe ingresar los 16 dígitos de la tarjeta')
         return false;
