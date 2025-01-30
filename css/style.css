@@ -130,6 +130,11 @@ label.key {
     padding-right: 5px;
 }
 
+::-webkit-inner-spin-button{
+    display: none;
+}
+
+
 input {
     width: 100%;
     margin: 0px 0px 8px 0px;
@@ -192,11 +197,11 @@ input {
 
 
 
-@media (min-width:1300px){
-    .contains__img{
+@media (min-width:1300px) {
+    .contains__img {
         top: 35%;
     }
-   
+
 }
 
 
